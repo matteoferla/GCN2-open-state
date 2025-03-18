@@ -2,7 +2,7 @@
 
 > This is a proof-of-concept test, using GCN2 kinases as a test case, to see how to force the open state
 > of something simple before using a complex system.
-> It was not tested experimentally
+> It was not tested experimentally and actually has a blunder (DFG motif deleted).
 
 This protein was mentioned to me as it was a project that could not be progressed by
 crystallographic fragment-based screening due to the lack of a crystal structure in the open state.
@@ -181,22 +181,27 @@ Ideally the structure should mimic DFG-out (Phe occludes active site).
 ### Future
 
 Run AF3 with multiple seeds and with and without ATP + 2x Mg.
+The word-of-mouth premise what that the active site closes up on itself.
+However, this may not be true, so could be tested by MD.
 
-Find a good DFG-out and DFG-in structure and compare the two.
 Design a DFG-out stabilising structure... but more directed:
 Given the 920-937 helix, ideally having before it a helix-hairpin-helix above it,
-but downstream of the DFG motif.
+but downstream of the DFG motif. So this could be driven.
 
-## PyMOl snippet
+However, a far simpler solution would be use something like ∆875-921,insPG,
+or better yet enumerate 2/3 residue inserts.
 
-  util.mass_align("6N3O_relaxed",1,_self=cmd)
-  color turquoise, 6N3O_relaxed
-  color coral, not 6N3O_relaxed
-  color white, element C and not polymer
-  color atomic, not element C
-  set grid_slot, -2, 6N3O_relaxed, 
-  set grid_mode, 1
-  ray 3956, 973, async=1
+## Footnote: PyMOl snippet
 
+```
+util.mass_align("6N3O_relaxed",1,_self=cmd)
+color turquoise, 6N3O_relaxed
+color coral, not 6N3O_relaxed
+color white, element C and not polymer
+color atomic, not element C
+set grid_slot, -2, 6N3O_relaxed, 
+set grid_mode, 1
+ray 3956, 973, async=1
+```
 
 
