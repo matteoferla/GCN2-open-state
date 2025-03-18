@@ -1,0 +1,44 @@
+%YAML 1.2
+---
+
+hairpin:
+    # This is a missing loop 658-796 in a beta sheet
+    # it just needs a beta-hairpin
+    codename: hairpin
+    change: 658-796
+    contig: '[A584-657/2-5/A797-865/A922-1004/0]'
+
+linker:
+    # This is a disordered region 866-921
+    # it is 16A. 
+    codename: linker_short
+    change: 866-921
+    contig: '[A584-658/A794-865/6-10/A922-1004/0]'
+    hotspots: '[A600,A601,A632,A636,A848,A906,A947,A955]'
+
+linker2:
+    # This is a disordered region 866-921
+    # it is 16A. 
+    codename: linker_mid
+    change: 866-921
+    contig: '[A584-658/A794-865/11-20/A922-1004/0]'
+    hotspots: '[A600,A601,A632,A636,A848,A906,A947,A955]'
+
+
+linker3:
+    # This is a disordered region 866-921
+    # it is 16A. 
+    codename: linker_large
+    change: 866-921
+    contig: '[A584-658/A794-865/21-30/A922-1004/0]'
+    hotspots: '[A600,A601,A632,A636,A848,A906,A947,A955]'
+
+
+
+linker4:
+    # This is a disordered region 866-921
+    # it is 16A. 
+    codename: linker_huge
+    change: 866-921
+    contig: '[A584-658/A794-865/30-60/A922-1004/0]'
+    hotspots: '[A600,A601,A632,A636,A848,A906,A947,A955]'
