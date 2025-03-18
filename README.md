@@ -188,8 +188,10 @@ Design a DFG-out stabilising structure... but more directed:
 Given the 920-937 helix, ideally having before it a helix-hairpin-helix above it,
 but downstream of the DFG motif. So this could be driven.
 
-However, a far simpler solution would be use something like ∆875-921,insPG,
+However, a far simpler solution would be use something like ∆659-793,ins659DG,∆876-920,ins877PG,
 or better yet enumerate 2/3 residue inserts.
+
+
 
 ## Footnote: PyMOl snippet
 
